@@ -2,18 +2,6 @@ package rest
 
 import (
 	"fmt"
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/builder"
-	"github.com/eyebluecn/tank/code/tool/i18n"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/third"
-	"github.com/eyebluecn/tank/code/tool/util"
-	"github.com/eyebluecn/tank/code/tool/uuid"
-	"github.com/glebarez/sqlite"
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
-	"gorm.io/gorm/logger"
-	"gorm.io/gorm/schema"
 	"log"
 	"net/http"
 	"os"
@@ -21,6 +9,19 @@ import (
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/glebarez/sqlite"
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/builder"
+	"github.com/gwq5210/tank/code/tool/i18n"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/third"
+	"github.com/gwq5210/tank/code/tool/util"
+	"github.com/gwq5210/tank/code/tool/uuid"
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
+	"gorm.io/gorm/schema"
 )
 
 //install apis. Only when installing period can be visited.

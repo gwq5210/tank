@@ -3,12 +3,6 @@ package rest
 import (
 	"archive/zip"
 	"fmt"
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/builder"
-	"github.com/eyebluecn/tank/code/tool/download"
-	"github.com/eyebluecn/tank/code/tool/i18n"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/util"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -18,6 +12,13 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/builder"
+	"github.com/gwq5210/tank/code/tool/download"
+	"github.com/gwq5210/tank/code/tool/i18n"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/util"
 )
 
 /**

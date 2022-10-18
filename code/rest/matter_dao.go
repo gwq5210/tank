@@ -1,15 +1,18 @@
 package rest
 
 import (
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/builder"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/util"
-	"github.com/eyebluecn/tank/code/tool/uuid"
-	"gorm.io/gorm"
+	"errors"
+	"io/fs"
 	"math"
 	"os"
 	"time"
+
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/builder"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/util"
+	"github.com/gwq5210/tank/code/tool/uuid"
+	"gorm.io/gorm"
 )
 
 type MatterDao struct {
@@ -443,7 +446,7 @@ func (this *MatterDao) Delete(matter *Matter) {
 
 		//delete from disk.
 		err := os.Remove(matter.AbsolutePath())
-		if err != nil {
+		if err != nil && !errors.Is(err, fs.ErrNotExist) {
 			this.logger.Error("occur error when deleting file. %v", err)
 		}
 

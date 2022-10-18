@@ -2,10 +2,11 @@ package test
 
 import (
 	"bytes"
-	"github.com/eyebluecn/tank/code/tool/dav"
-	"github.com/eyebluecn/tank/code/tool/dav/xml"
 	"testing"
 	"time"
+
+	"github.com/gwq5210/tank/code/tool/dav"
+	"github.com/gwq5210/tank/code/tool/dav/xml"
 )
 
 func TestXmlDecoder(t *testing.T) {

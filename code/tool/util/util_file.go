@@ -1,16 +1,19 @@
 package util
 
 import (
+	"errors"
 	"fmt"
-	"github.com/eyebluecn/tank/code/tool/result"
 	"go/build"
 	"io"
+	"io/fs"
 	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
 	"runtime"
 	"strings"
+
+	"github.com/gwq5210/tank/code/tool/result"
 )
 
 func PathExists(path string) bool {
@@ -128,8 +131,8 @@ func GetFilenameOfPath(fullPath string) string {
 func DeleteEmptyDir(dirPath string) bool {
 	dir, err := ioutil.ReadDir(dirPath)
 	if err != nil {
-		if strings.Contains(err.Error(), "The system cannot find") {
-			return false
+		if strings.Contains(err.Error(), "The system cannot find") && errors.Is(err, fs.ErrNotExist) {
+			return true
 		} else {
 			panic(result.BadRequest("occur error while reading %s %s", dirPath, err.Error()))
 		}

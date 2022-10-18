@@ -2,12 +2,6 @@ package rest
 
 import (
 	"fmt"
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/dav"
-	"github.com/eyebluecn/tank/code/tool/dav/xml"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/util"
-	"github.com/eyebluecn/tank/code/tool/webdav"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -15,6 +9,13 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/dav"
+	"github.com/gwq5210/tank/code/tool/dav/xml"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/util"
+	"github.com/gwq5210/tank/code/tool/webdav"
 )
 
 /**

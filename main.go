@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/support"
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/support"
 	_ "gorm.io/driver/mysql"
 )
 

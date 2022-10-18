@@ -1,4 +1,4 @@
-module github.com/eyebluecn/tank
+module github.com/gwq5210/tank
 
 go 1.14
 

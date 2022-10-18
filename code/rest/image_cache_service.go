@@ -2,16 +2,17 @@ package rest
 
 import (
 	"fmt"
-	"github.com/disintegration/imaging"
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/util"
 	"image"
 	"net/http"
 	"os"
 	"path/filepath"
 	"strconv"
 	"strings"
+
+	"github.com/disintegration/imaging"
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/util"
 )
 
 //@Service

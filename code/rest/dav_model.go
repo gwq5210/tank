@@ -2,11 +2,12 @@ package rest
 
 import (
 	"fmt"
-	"github.com/eyebluecn/tank/code/tool/dav"
-	"github.com/eyebluecn/tank/code/tool/dav/xml"
 	"net/http"
 	"path"
 	"strconv"
+
+	"github.com/gwq5210/tank/code/tool/dav"
+	"github.com/gwq5210/tank/code/tool/dav/xml"
 )
 
 //webdav url prefix.

@@ -1,6 +1,6 @@
 package rest
 
-import "github.com/eyebluecn/tank/code/core"
+import "github.com/gwq5210/tank/code/core"
 
 //@Service
 type SessionService struct {

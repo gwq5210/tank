@@ -2,10 +2,11 @@ package test
 
 import (
 	"fmt"
-	"github.com/eyebluecn/tank/code/tool/util"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/gwq5210/tank/code/tool/util"
 )
 
 func TestHello(t *testing.T) {

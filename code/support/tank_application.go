@@ -3,17 +3,18 @@ package support
 import (
 	"flag"
 	"fmt"
-	"github.com/eyebluecn/tank/code/core"
-	"github.com/eyebluecn/tank/code/tool/result"
-	"github.com/eyebluecn/tank/code/tool/util"
-	jsoniter "github.com/json-iterator/go"
-	"golang.org/x/crypto/ssh/terminal"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"net/url"
 	"strings"
 	"syscall"
+
+	"github.com/gwq5210/tank/code/core"
+	"github.com/gwq5210/tank/code/tool/result"
+	"github.com/gwq5210/tank/code/tool/util"
+	jsoniter "github.com/json-iterator/go"
+	"golang.org/x/crypto/ssh/terminal"
 )
 
 const (

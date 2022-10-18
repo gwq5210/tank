@@ -2,11 +2,12 @@ package util
 
 import (
 	"archive/zip"
-	"github.com/eyebluecn/tank/code/tool/result"
 	"io"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/gwq5210/tank/code/tool/result"
 )
 
 //zip srcPath to destPath。

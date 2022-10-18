@@ -8,10 +8,11 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"github.com/eyebluecn/tank/code/tool/dav/xml"
-	"github.com/eyebluecn/tank/code/tool/result"
 	"io"
 	"net/http"
+
+	"github.com/gwq5210/tank/code/tool/dav/xml"
+	"github.com/gwq5210/tank/code/tool/result"
 )
 
 // Proppatch describes a property update instruction as defined in RFC 4918.

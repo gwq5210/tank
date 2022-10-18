@@ -1,7 +1,7 @@
 package rest
 
 import (
-	"github.com/eyebluecn/tank/code/tool/builder"
+	"github.com/gwq5210/tank/code/tool/builder"
 )
 
 type BaseDao struct {
